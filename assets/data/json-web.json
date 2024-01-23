@@ -3,21 +3,21 @@
     {
       "url": "./assets/img/product1.png",
       "oldPrice": "60.00",
-      "newPrice": "40.00",
+      "newPrice": "35.00",
       "desc": "lorem ipsum dolor samet",
       "id": "1"
     },
     {
       "url": "./assets/img/product5.png",
       "oldPrice": "60.00",
-      "newPrice": "40.00",
+      "newPrice": "22.00",
       "desc": "lorem ipsum dolor samet",
       "id": "2"
     },
     {
       "url": "./assets/img/product4.png",
       "oldPrice": "60.00",
-      "newPrice": "40.00",
+      "newPrice": "55.00",
       "desc": "lorem ipsum dolor samet",
       "id": "132"
     },

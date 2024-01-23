@@ -27,6 +27,9 @@ header {
   .header-top {
     padding: 20px 0;
     background-color: black;
+    &.visible {
+      display: none;
+    }
     .header-top-content {
       display: flex;
       justify-content: space-between;
@@ -276,6 +279,7 @@ header {
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid gray;
+      padding-bottom: 10px;
       .buttons {
         display: flex;
         gap: 30px;
@@ -287,6 +291,18 @@ header {
           &:hover {
             color: red;
           }
+        }
+      }
+      .blue-button {
+        border-radius: 30px;
+        padding: 5px 20px;
+        color: white;
+        background-color: #2577fd;
+        transition: 0.3s;
+        border: none;
+        font-size: 1.5rem;
+        &:hover {
+          background-color: #00b1ff;
         }
       }
     }
@@ -322,6 +338,12 @@ header {
             &:hover {
               background-color: #00b1ff;
             }
+          }
+        }
+        @media only screen and (max-width: 767px) {
+          .box {
+            flex-direction: column;
+            width: 100%;
           }
         }
       }
@@ -429,12 +451,19 @@ header {
   }
 
   @media only screen and (max-width: 767px) {
-  
-.news{
-    
-}
-
-}
+    .news {
+      .content {
+        flex-direction: column;
+        gap: 40px;
+        .left {
+          width: 80%;
+        }
+        .email {
+          width: 80%;
+        }
+      }
+    }
+  }
 }
 
 #payments {
@@ -455,6 +484,14 @@ header {
       }
       i {
         font-size: 3rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .payments {
+      flex-wrap: wrap;
+      .card-box {
+        width: 80%;
       }
     }
   }
@@ -525,6 +562,68 @@ footer {
     border-radius: 50%;
     i {
       color: white;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      .grids {
+        align-items: center;
+
+        width: 70%;
+        &.first-grid {
+          align-items: center;
+        }
+      }
+    }
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+}
+
+#add {
+  padding: 100px 0;
+  .add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid gray;
+      padding-bottom: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 50%;
+      align-items: center;
+      input {
+        width: 100%;
+        padding: 20px;
+      }
+      .blue-button {
+        border-radius: 30px;
+        padding: 5px 20px;
+        color: white;
+        background-color: #2577fd;
+        transition: 0.3s;
+        border: none;
+        font-size: 1.5rem;
+        &:hover {
+          background-color: #00b1ff;
+        }
+      }
     }
   }
 }
