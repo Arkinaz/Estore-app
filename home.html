@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"
+      integrity="sha512-TjBzDQIDnc6pWyeM1bhMnDxtWH0QpOXMcVooglXrali/Tj7W569/wd4E8EDjk1CwOAOPSJon1VfcEt1BI4xIrA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LINKS -->
+
+    <script defer src="./assets/js/header.js"></script>
+    <script defer src="./assets/js/home.js"></script>
+
+    <link rel="stylesheet" href="./assets/style/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="cont">
+          <div class="header-top-content">
+            <div class="icon">
+              <div class="lang">
+                <img src="./assets/img/header_icon.png" alt="" /><i
+                  class="fa-solid fa-chevron-down"
+                ></i>
+              </div>
+              <p>+777 2345 7886</p>
+            </div>
+
+            <nav>
+              <ul>
+                <li>
+                  <a href="">My account</a>
+                </li>
+                <li>
+                  <a href="">Wishlist</a>
+                </li>
+                <li>
+                  <a href="">Shopping</a>
+                </li>
+                <li>
+                  <a href="">Cart</a>
+                </li>
+                <li>
+                  <a href="">Checkout</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="cont">
+          <div class="header-bottom-content">
+            <img src="./assets/img/logo.png" alt="" />
+
+            <nav class="responsive-menu">
+              <ul>
+                <li>
+                  <a href="">Home</a>
+                </li>
+                <li>
+                  <a href="">Category</a>
+                </li>
+                <li>
+                  <a href="">Latest</a>
+                </li>
+                <li>
+                  <a href="">Blog</a>
+                </li>
+                <li>
+                  <a href="">Pages</a>
+                </li>
+                <li>
+                  <a href="">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="search">
+              <input type="search" placeholder="Search products..." />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-shopping-bag"></i>
+
+            <button class="blue-button">Sign In</button>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="home">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card-outside">
+              <div class="cont">
+                <div class="card-inside">
+                  <div class="left">
+                    <img
+                      src="./assets/img/hero_man.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="right">
+                    <p>60% Discount</p>
+
+                    <h1>Winter Collection</h1>
+                    <span>Best cloth collection by 2024!</span>
+                    <button class="blue-button">Shop now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-outside">
+              <div class="cont">
+                <div class="card-inside">
+                  <div class="left">
+                    <img
+                      src="./assets/img/hero_man.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="right">
+                    <p>60% Discount</p>
+
+                    <h1>Winter Collection</h1>
+                    <span>Best cloth collection by 2024!</span>
+                    <button class="blue-button">Shop now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-outside">
+              <div class="cont">
+                <div class="card-inside">
+                  <div class="left">
+                    <img
+                      src="./assets/img/hero_man.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="right">
+                    <p>60% Discount</p>
+                    <h1>Winter Collection</h1>
+                    <span>Best cloth collection by 2024!</span>
+                    <button class="blue-button">Shop now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="shop">
+      <div class="cont">
+        <div class="shop">
+          <h1>Shop by Category</h1>
+          <div class="card-boxes">
+            <div class="card-box">
+              <img src="./assets/img/cat1.jpg" alt="" />
+              <div class="text-thing">
+                <h2>Owmen`S</h2>
+                <a href="#">Best new deals</a>
+                <p>New Collection</p>
+              </div>
+            </div>
+            <div class="card-box">
+              <img src="./assets/img/cat2.jpg" alt="" />
+              <div class="text-thing">
+                <p>Discount!</p>
+                <h2>Winter Cloth</h2>
+                <span>New Collection</span>
+              </div>
+            </div>
+            <div class="card-box">
+              <img src="./assets/img/cat3.jpg" alt="" />
+              <div class="text-thing">
+                <h2>Man`S Cloth</h2>
+                <a href="#">Best new deals</a>
+                <p>New Collection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="cont">
+        <div class="products">
+          <div class="heading">
+            <h1>Latest Products</h1>
+            <div class="buttons">
+              <a href="">All</a>
+              <a href="">New</a>
+              <a href="">Feathured</a>
+              <a href="">Offer</a>
+            </div>
+          </div>
+
+          <div class="boxes"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="cont">
+        <div class="news">
+          <img class="man" src="./assets/img/latest-man.png" alt="" />
+          <div class="content">
+            <div class="left">
+              <h1>Get Our Latest Offers News</h1>
+              <span> Subscribe news latter </span>
+            </div>
+            <div class="email">
+              <input type="email" placeholder="Enter your email" id="" />
+              <button class="blue-button">Shop now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="payments">
+      <div class="cont">
+        <div class="payments">
+          <div class="card-box">
+            <i class="fa-solid fa-box"></i>
+            <h3>Free Shipping Method</h3>
+            <span>
+              aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.
+            </span>
+          </div>
+          <div class="card-box">
+            <i class="fa-solid fa-lock-open"></i>
+            <h3>Secure Payment System</h3>
+            <span>
+              aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.
+            </span>
+          </div>
+          <div class="card-box">
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <h3>Secure Payment System</h3>
+            <span>
+              aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="cont">
+        <div class="footer-top">
+          <div class="grids first-grid">
+            <img src="./assets/img/logo.png" alt="" />
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+              eiusmod tempor incididunt ut labore.</span
+            >
+          </div>
+          <div class="grids">
+            <label for="">Quick Links</label>
+
+            <li><a href="">About</a></li>
+            <li><a href="">Offers & Discounts</a></li>
+            <li><a href="">Get Coupon</a></li>
+            <li><a href="">Contact Us</a></li>
+          </div>
+          <div class="grids">
+            <label for="">New Products</label>
+
+            <li><a href="">Woman Cloth</a></li>
+            <li><a href="">Fashion Accessories</a></li>
+            <li><a href="">Man Accessories</a></li>
+            <li><a href="">Rubber made Toys</a></li>
+          </div>
+          <div class="grids">
+            <label for="">Support</label>
+
+            <li><a href="">Frequently Asked Questions</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Report a Payment Issue</a></li>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Copyright ©2024 All rights reserved | This template is made with
+            <i class="fa-regular fa-heart"></i> by
+            <span> Colorlib </span>
+          </p>
+          <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-behance"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+        </div>
+      </div>
+      <a href="#home" class="on-top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </footer>
+  </body>
+</html>
