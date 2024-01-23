@@ -10,10 +10,10 @@ bars.addEventListener("click", function () {
 });
 
 window.addEventListener("scroll", function () {
-  if (this.scrollY > 300) {
+  if (this.scrollY > 500) {
     headerTop.classList.add("visible");
     headerBtm.style.position = "fixed";
-  } else {
+  } else if (scrollY < 200) {
     headerBtm.style.position = "static";
     headerTop.classList.remove("visible");
   }
