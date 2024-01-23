@@ -25,7 +25,7 @@ function drawTable(item) {
         <td>${el.desc}</td>
         <td>${el.newPrice}</td>
         <td>${el.oldPrice}</td>
-        <td><i onclick=editThis("${el.id}") class="fa-solid fa-pen"></i>
+        <td><a href="#" onclick=editThis("${el.id}") class="fa-solid fa-pen"></a>
        
         
         </td>

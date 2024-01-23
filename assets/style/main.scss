@@ -297,6 +297,7 @@ header {
 
 #products {
   .products {
+    padding-bottom: 100px;
     .heading {
       display: flex;
       justify-content: space-between;
@@ -695,6 +696,7 @@ footer {
             }
             .fa-pen {
               color: rgb(105, 163, 18);
+              text-decoration: none;
             }
             .fa-trash-can {
               color: red;

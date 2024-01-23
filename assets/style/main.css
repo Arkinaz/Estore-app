@@ -276,6 +276,9 @@ header .header-bottom .header-bottom-content .fa-bars {
   }
 }
 
+#products .products {
+  padding-bottom: 100px;
+}
 #products .products .heading {
   display: flex;
   justify-content: space-between;
@@ -649,6 +652,7 @@ footer .on-top i {
 }
 #table .table table tbody tr td .fa-pen {
   color: rgb(105, 163, 18);
+  text-decoration: none;
 }
 #table .table table tbody tr td .fa-trash-can {
   color: red;
