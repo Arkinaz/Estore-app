@@ -109,7 +109,7 @@
             </div>
 
             <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-shopping-bag"></i>
+            <i class="fa-solid fa-shopping-bag basket-page"></i>
 
             <button class="blue-button">Sign In</button>
             <i class="fa-solid fa-bars"></i>
@@ -122,11 +122,23 @@
       <div class="cont">
         <div class="add">
           <h1>Submit Product</h1>
+
           <form action="">
-            <input type="text" placeholder="Image url..." />
-            <input type="number" min="1" placeholder="Newest price" />
-            <input type="number" min="1" placeholder="Lastest price" />
-            <input type="text" placeholder="Description..." />
+            <input class="input" type="text" placeholder="Image url..." />
+            <input class="input" type="text" placeholder="Title..." />
+            <input
+              class="input"
+              type="number"
+              min="1"
+              placeholder="Newest price"
+            />
+            <input
+              class="input"
+              type="number"
+              min="1"
+              placeholder="Lastest price"
+            />
+            <input class="input" type="text" placeholder="Description..." />
             <button type="submit" class="blue-button">Submit</button>
           </form>
         </div>
@@ -136,14 +148,27 @@
     <section id="table">
       <div class="cont">
         <div class="table">
+          <input
+            class="search-this"
+            placeholder="Search product by ID"
+            type="search"
+          />
+
           <table>
             <thead>
               <tr>
-                <th>ID</th>a
+                <th>ID</th>
                 <th>Img</th>
-                <th></th>
+                <th>Title</th>
+                <th>Desc</th>
+                <th>Price Newest</th>
+                <th>Price Latest</th>
+
+                <th>Edit</th>
+                <th>Delete</th>
               </tr>
             </thead>
+            <tbody></tbody>
           </table>
         </div>
       </div>

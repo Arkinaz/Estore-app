@@ -1,28 +1,16 @@
 {
   "products": [
     {
-      "url": "./assets/img/product1.png",
-      "oldPrice": "60.00",
-      "newPrice": "35.00",
-      "desc": "lorem ipsum dolor samet",
-      "id": "1"
-    },
-    {
-      "url": "./assets/img/product5.png",
-      "oldPrice": "60.00",
-      "newPrice": "22.00",
-      "desc": "lorem ipsum dolor samet",
-      "id": "2"
-    },
-    {
       "url": "./assets/img/product4.png",
+      "title": "lorem",
       "oldPrice": "60.00",
-      "newPrice": "55.00",
-      "desc": "lorem ipsum dolor samet",
+      "newPrice": "40.00",
+      "desc": "awdawdawd",
       "id": "132"
     },
     {
       "url": "./assets/img/product3.png",
+      "title": "loawdwdarem",
       "oldPrice": "60.00",
       "newPrice": "40.00",
       "desc": "lorem ipsum dolor samet",
@@ -30,10 +18,35 @@
     },
     {
       "url": "./assets/img/product2.png",
+      "title": "awdaw",
       "oldPrice": "60.00",
       "newPrice": "40.00",
       "desc": "lorem ipsum dolor samet",
       "id": "1543"
+    },
+    {
+      "id": "bfdb",
+      "url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fimage&psig=AOvVaw1_j2CAYGd060IadiljbDcW&ust=1706110419845000&source=images&cd=vfe&ved=0CBMQjRxqFwoTCPDp193q84MDFQAAAAAdAAAAABAE",
+      "title": "Facilis qui velit co",
+      "newPrice": "67",
+      "oldPrice": "100",
+      "desc": "Ad impedit blanditi"
+    },
+    {
+      "id": "dda9",
+      "url": "./assets/img/product1.png",
+      "title": "awdwad",
+      "newPrice": "2312",
+      "oldPrice": "24234",
+      "desc": "sefsef"
+    },
+    {
+      "id": "e927",
+      "url": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
+      "title": "Eos do iste qui eius",
+      "newPrice": "93",
+      "oldPrice": "73",
+      "desc": "Lorem id amet cupid"
     }
   ]
 }

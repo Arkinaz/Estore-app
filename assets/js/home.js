@@ -20,10 +20,19 @@ function drawCards(params) {
     boxes.innerHTML += `<div class="box">
         <img src="${el.url}" alt="${el.url}" />
         <img class="stars" src="./assets/img/download.jfif" alt="" />
-        <a href="./details.html?id=${el.id}">See Details</a>
+        <p>
+          ${el.title}
+        </p>
+        <a href="./details.html?id=${el.id}">See Details</a> 
+        
         <p>
           $${el.newPrice} <span>$${el.oldPrice}</span>
         </p>
+       
+        <div class="icons">
+        <i onclick=addToBasket("${el.id}") class="fa-solid fa-basket-shopping"></i>
+        <i class="fa-regular fa-heart"></i>
+      </div>
       </div>`;
   });
 }
@@ -42,3 +51,17 @@ asc.addEventListener("click", function (e) {
     drawCards(newArr);
   }
 });
+
+let basket = JSON.parse(localStorage.getItem("basket")) ?? [];
+
+function addToBasket(id) {
+  let find = newArr.find((el) => el.id == id);
+  let index = basket.findIndex((el) => el.obj.id == id);
+
+  if (index === -1) {
+    basket.push({ count: 1, obj: find });
+  } else {
+    basket[index].count += 1;
+  }
+  localStorage.setItem("basket", JSON.stringify(basket));
+}
